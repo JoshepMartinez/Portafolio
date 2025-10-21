@@ -1,19 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="/Style/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joshep Martinez | Portafolio</title>
+  <link rel="stylesheet" href="/Style/main.css">
 </head>
 <body>
-    <header>
-        <h1>dfdfd</h1>
-        <button>s</button>
-        <button>a</button>
-    </header>
-    <div id="" class="">
-        <h2>ssdfa</h2>
+  <header>
+    <div class="container">
+      <h1>Joshep Stif Martinez Garcia</h1>
+      <p>Desarrollador Web | Full Stack | Front-End | Back-End</p>
     </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section id="sobre-mi" class="container">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un desarrollador apasionado por la creación de soluciones web modernas. 
+      Me especializo en tecnologías como HTML, CSS, JavaScript, React y Node.js.
+    </p>
+    <div class="video-container" style="margin-top: 20px; max-width: 600px;">
+        <iframe 
+          width="800" 
+          height="400" 
+          src="https://www.youtube.com/embed/wKyOjbVdHek" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          style="border-radius: 8px;"
+        ></iframe>
+      </div>
+  </section>
+
+  <section id="proyectos" class="container">
+    <h2>Proyectos</h2>
+    <div class="proyectos">
+      <div class="proyecto">
+        <h3>App de Tareas</h3>
+        <p>Aplicación web bancaria desarrollada en Java que permite gestionar operaciones financieras básicas como depósitos,
+        retiros y pagos de servicios, con autenticación de usuarios y almacenamiento en Firebase en tiempo real.</p>
+        <a href="https://github.com/JoshepMartinez/Acme-Bank-JAVA-PROYECT" target="_blank">Ver código</a>
+      </div>
+      <div class="proyecto">
+        <h3>API REST de Productos</h3>
+        <p>Backend en Node.js con Express y MongoDB para gestionar productos.</p>
+        <a href="https://github.com/tuusuario/api-productos" target="_blank">Ver código</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades" id="habilidades">
+    <h2>Habilidades</h2>
+  
+    <div class="habilidades-botones">
+      <button onclick="mostrarContenido('tecnicas')">Habilidades Técnicas</button>
+      <button onclick="mostrarContenido('blandas')">Habilidades Blandas</button>
+    </div>
+  
+    <div class="contenido-habilidad" id="tecnicas">
+      <div class="tarjetas-container">
+        <div class="tarjeta">
+          <h4>HTML</h4>
+          <p>Uso HTML semántico para estructuras limpias y accesibles.</p>
+        </div>
+        <div class="tarjeta">
+          <h4>JavaScript</h4>
+          <p>Implemento lógica interactiva con JS moderno y buenas prácticas.</p>
+        </div>
+        <div class="tarjeta">
+          <h4>React</h4>
+          <p>Desarrollo interfaces dinámicas con componentes reutilizables.</p>
+        </div>
+        <div class="tarjeta">
+          <h4>Node.js</h4>
+          <p>Creo APIs robustas con Node y Express para backend escalable.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="contenido-habilidad" id="blandas" style="display: none;">
+      <div class="tarjetas-container">
+        <div class="tarjeta">
+          <h4>Comunicación</h4>
+          <p>Transmito ideas claras en equipos de desarrollo y presentaciones.</p>
+        </div>
+        <div class="tarjeta">
+          <h4>Trabajo en equipo</h4>
+          <p>Me adapto a dinámicas grupales, colaborando de forma proactiva.</p>
+        </div>
+        <div class="tarjeta">
+          <h4>Resolución de problemas</h4>
+          <p>Analizo errores y encuentro soluciones rápidas y efectivas.</p>
+        </div>
+        <div class="tarjeta">
+          <h4>Adaptabilidad</h4>
+          <p>Aprendo nuevas tecnologías y me ajusto a cambios fácilmente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <p>Puedes contactarme por cualquiera de los siguientes medios:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:">Correo</a></li>
+        <li><strong>WhatsApp Personal:</strong> <a href="https://wa.me/573052288355" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><strong>WhatsApp Profesional:</strong> <a href="https://wa.me/573153993340" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joshep-stif-martinez-garcia-4841b9357" target="_blank" rel="noopener noreferrer">linkedin</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Joshep Stif Martinez Garcia · <a href="https://www.linkedin.com/in/joshep-stif-martinez-garcia-4841b9357" target="_blank">LinkedIn</a> · <a href="https://github.com/JoshepMartinez" target="_blank">GitHub</a></p>
+  </footer>
+
+  <script src="/Scripts/scripts.js"></script>
 </body>
 </html>
